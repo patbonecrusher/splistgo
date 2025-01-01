@@ -3,8 +3,6 @@ package main
 import (
 	"fmt"
 	"log"
-
-	// "go.bug.st/serial"
 	"os"
 
 	"go.bug.st/serial/enumerator"
