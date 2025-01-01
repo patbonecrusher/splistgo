@@ -36,6 +36,7 @@ func listPorts() {
 			fmt.Printf("   USB ID      : %s:%s\n", port.VID, port.PID)
 			fmt.Printf("   USB serial  : %s\n", port.SerialNumber)
 		}
+		fmt.Println()
 	}
 }
 
@@ -50,5 +51,5 @@ func findPort(serialNumber string) {
 			return
 		}
 	}
-//	fmt.Printf("Port with serial number %s not found\n", serialNumber)
+	// fmt.Printf("Port with serial number %s not found\n", serialNumber)
 }

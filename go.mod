@@ -1,4 +1,4 @@
-module example/splistg
+module github.com/patbonecrusher/splistgo
 
 go 1.21.0
 
