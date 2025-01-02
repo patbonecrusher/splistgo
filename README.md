@@ -12,6 +12,12 @@ To install using go:
 go install github.com/patbonecrusher/splistgo@v1.1.0
 ```
 
+To install using homebrew:
+```sh
+brew tap patbonecrusher/splistgo
+brew install splistgo
+```
+
 ## Building
 
 To build the project for all supported platforms, run:
