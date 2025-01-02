@@ -6,10 +6,10 @@ This project is a Go application that uses GoReleaser for building and releasing
 
 ## Installation
 
-To install the dependencies, run:
+To install using go:
 
 ```sh
-go mod tidy
+go install github.com/patbonecrusher/splistgo@v1.1.0
 ```
 
 ## Building
