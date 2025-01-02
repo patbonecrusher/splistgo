@@ -76,6 +76,8 @@ release:
 brews:
   -
     name: splistgo
+    repository:
+      name: patbonecrusher/splistgo
     directory: Formula
     homepage: https://github.com/patbonecrusher/splistgo
     description: A simple CLI tool to get the path to a serial port device using it's serial number.
