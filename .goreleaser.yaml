@@ -16,11 +16,26 @@ before:
     - go generate ./...
 
 builds:
-  - env:
-      - CGO_ENABLED=1
+  - id: linux
     goos:
       - linux
+    goarch:
+      - amd64
+      - arm64
+    env:
+      - >-
+        {{- if eq .Os "linux" }}
+          {{- if eq .Arch "amd64"}}CC=x86_64-unknown-linux-gnu-gcc{{- end }}
+        {{- end }}
+
+  - id: darwin
+    goos:
       - darwin
+    goarch:
+      - amd64
+      - arm64
+    env:
+      - CGO_ENABLED=1
 
 archives:
   - format: tar.gz
